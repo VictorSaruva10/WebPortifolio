@@ -8,6 +8,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
     
     <!-- FAVICON -->
     <link rel="shortcut icon" href="favicon/android-chrome-192x192.png" type="image/x-icon">
@@ -36,7 +38,10 @@
             <div class="banner">
                 <h1>Programador Front End</h1>
                 <p>Victor Hugo Saruva De Aquino</p>
-                <button>Saiba mais</button>
+                <div id="btn">
+                  <button id="btn-linkedin"><a href="#">Linkedin</a></button>
+                  <button id="btn-github"><a href="#">GitHub</a> </button>
+                </div>
             </div>
         </header>
 
@@ -47,80 +52,34 @@
                 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
                 <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
                 <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-                <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
               </ul>
             </nav>
-            <div class="social-media">
+            <!-- <div class="social-media">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-github-alt"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+            </div> -->
           </aside>
 
           <section class="section sessao-conhecimentos">
             <div class="sessao-header">
-              <h1>Conhecimentos</h1>
+              <h1 style="color: white;">Conhecimentos</h1>
             </div>
-            <div class="conhecimentos">
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-html5"></i>
-                  <h3>HTML</h3>
+              <div class="img-conhecimento">
+                <div class="">
+                  <img src="img/conhecimento/icons8-javascript-240.png" alt="">
+                  <img src="img/conhecimento/icons8-css3-240.png" alt="">
+                  <img src="img/conhecimento/icons8-html-5-240.png" alt="">
+                    
                 </div>
-                <div class="conhecimento-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illum eius natus! Tempora ab consectetur maiores, nesciunt natus distinctio qui sint alias accusamus vero optio laboriosam, fuga quo. Dolor, molestias.</p>
+                <div>
+                  <img src="img/conhecimento/icons8-git-240.png" alt="">
+                  <img src="img/conhecimento/icons8-logo-mysql-240.png" alt="">
+                  <img src="img/conhecimento/icons8-logo-php-250.png" alt="">
                 </div>
+
               </div>
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-css3-alt"></i>
-                  <h3>CSS</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam illum eius natus! Tempora ab consectetur maiores, nesciunt natus distinctio qui sint alias accusamus vero optio laboriosam, fuga quo. Dolor, molestias.</p>
-                </div>
-              </div>
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fa-brands fa-php"></i>
-                  <h3>PHP</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dignissimos itaque enim natus, eaque fuga provident, quo doloribus delectus asperiores tempora rem possimus magni debitis odit veritatis? Doloribus, rem provident?</p>
-                </div>
-              </div>
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-js"></i>
-                  <h3>JavaScript</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dignissimos itaque enim natus, eaque fuga provident, quo doloribus delectus asperiores tempora rem possimus magni debitis odit veritatis? Doloribus, rem provident?</p>
-                </div>
-              </div>
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fa-brands fa-bootstrap"></i>
-                  <h3>Booststrap</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dignissimos itaque enim natus, eaque fuga provident, quo doloribus delectus asperiores tempora rem possimus magni debitis odit veritatis? Doloribus, rem provident?</p>
-                </div>
-              </div>
-              <div class="conhecimento">
-                <div class="conhecimento-header">
-                  <i class="fab fa-github"></i>
-                  <h3>Git e GitHub</h3>
-                </div>
-                <div class="conhecimento-text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dignissimos itaque enim natus, eaque fuga provident, quo doloribus delectus asperiores tempora rem possimus magni debitis odit veritatis? Doloribus, rem provident?</p>
-                </div>
-              </div>
-              <div class="conhecimento-img-wrapper">
-                <img src="img/conhecimentos.png" alt="conhecimento">
-              </div>
-            </div>
+            
           </section>
 
           <section class="sessao-projetos">
@@ -130,65 +89,81 @@
               <div class="projetos">
                 <div class="card">
                   <div class="card-img-wrapper">
-                    <img src="img/proj1.jpg" alt="">
+                    <img src="img/projetos/area.PNG" alt="">
                   </div>
                   <div class="card-info">
-                    <h2>Teste 01</h2>
-                    <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum maxime amet quae asperiores odit eos magnam earum fugiat cumque.</p>
-                    <button>Saiba Mais</button>
+                    <h2>Projeto Lange Page</h2>
+                    <h3>Html, Css</h3>
+                    <p>lange page desenvolvido no desafio do Frontend Mentor aonde recebi o  todo o layout e transformei em codigo.   </p>
+                    <button><a href="https://victorsaruva10.github.io/AreDeTransferencia_/" target="_blank">visualizar</a> </button>
                   </div>
                 </div> 
                 <div class="card">
                   <div class="card-img-wrapper">
-                    <img src="img/proj1.jpg" alt="">
+                    <img src="img/projetos/BoaForma.PNG" alt="">
                   </div>
                   <div class="card-info">
-                    <h2>Teste 01</h2>
-                    <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum maxime amet quae asperiores odit eos magnam earum fugiat cumque.</p>
-                    <button>Saiba Mais</button>
+                    <h2>Site para academia</h2>
+                    <h3>JavaScript,Bootstrap,Html e Css</h3>
+                    <p>Site desenvolvido no curso do <a href="https://www.nodestudio.com.br/" target="_blank" style="color: #ff4081">Node Studio</a> aonde pude aprender um pouco mais sobre bootstrap.</p>
+                    <button><a href="https://victorsaruva10.github.io/BoaForma/" target="_blank">visualizar</a> </button>
                   </div>
                 </div> 
                 <div class="card">
                   <div class="card-img-wrapper">
-                    <img src="img/proj1.jpg" alt="">
+                    <img src="img/projetos/Doctor.PNG" alt="">
                   </div>
                   <div class="card-info">
-                    <h2>Teste 01</h2>
-                    <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum maxime amet quae asperiores odit eos magnam earum fugiat cumque.</p>
-                    <button>Saiba Mais</button>
+                    <h2>Doctor Care</h2>
+                    <h3>JavaScript,Html e Css</h3>
+                    <p>Site desenvolvido na <a href="https://www.rocketseat.com.br/discover"target="_blank" style="color: #ff4081">Nlw da Rocketseat</a>aondo pude aprender muito coisa nova sobre css e html</p>
+                    <button><a href="https://victorsaruva10.github.io/DoctorCare/" target="_blank">visualizar</a> </button>
                   </div>
                 </div>
               </div>
+              <br><br>
+              <div class="projetos">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img src="img/projetos/Huddle.PNG" alt="">
+                  </div>
+                  <div class="card-info">
+                    <h2>Huddle</h2>
+                    <h3>Html e Css</h3>
+                    <p>lange page desenvolvido no desafio do <a href="http://" target="_blank" rel="noopener noreferrer" style="color: #ff4081">Frontend Mentor</a> aonde recebi o  todo o layout e transformei em codigo.</p>
+                    <button><a href="https://victorsaruva10.github.io/HuddleLanding/" target="_blank">visualizar</a> </button>
+                  </div>
+                </div> 
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img src="img/projetos/Maycon.PNG" alt="">
+                  </div>
+                  <div class="card-info">
+                    <h2>Maycon tatto</h2>
+                    <h3>Bootstrap,Html e Css</h3>
+                    <p>Site desenvolvido para um amigo que não estar no ar, nesse site eu pensei em todo o layout e desenvolvi em JavaScript,Bootstrap,Html e Css.</p>
+                    <button><a href="https://victorsaruva10.github.io/MayconTatuagem/" target="_blank">visualizar</a> </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img src="img/projetos/playerMusica.PNG" alt="">
+                  </div>
+                  <div class="card-info">
+                    <h2>Player de música</h2>
+                    <h3>JavaScript,Html e Css</h3>
+                    <p>Player de música .</p>
+                    <button><a href="https://victorsaruva10.github.io/PlayerMusicas/" target="_blank">visualizar</a> </button>
+                  </div>
+                </div> 
+              </div>
+              
           </section>
 
-          <!-- <section class="sessao-contato">
-              <div class="contato-wrapper">
-                <div class="contato-left"></div>
-                <div class="contato-right">
-                  <h1>Contato</h1>
-                  <form action="">
-                    <div class="input-group">
-                      <input type="text" class="field" id="nome">
-                      <label for="nome" class="field-label">Nome</label>
-                    </div>
-                    <div class="input-group">
-                      <input type="text" class="field" id="email">
-                      <label for="email" class="field-label">E-mail</label>
-                    </div>
-                    <div class="input-group">
-                      <textarea class="field" id="mensagem"></textarea>
-                      <label for="mensagem" class="field-label">Mensagem</label>
-                    </div>
-                    <button type="submit">Enviar</button>
-                  </form>
-                </div>
-              </div>
-          </section> -->
+          
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
